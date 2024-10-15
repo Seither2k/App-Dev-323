@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "bbf56db9-af99-4b16-8a97-dd18c1b3928f"
+      }
+    },
+    "android": {
+      "package": "com.seither.hms2backend"
+    }
+  }
+}
