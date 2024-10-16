@@ -95,6 +95,12 @@ export const StyledButton = styled.TouchableOpacity`
       border-radius: 5px;
       margin-vertical: 5px;
       height: 60px;
+
+      ${(props) => props.google == true && `
+         background-color: ${green};
+         flex-direction: row;
+         justify-content: center;
+      `}
 `;
 
 export const ButtonText = styled.Text`
@@ -105,6 +111,10 @@ export const ButtonText = styled.Text`
 export const MsgBox = styled.Text`
     text-align: center;
     font-size: 13px;
+
+    ${(props) => props.google == true && `
+      padding: 25px;
+    `}
 `;
 
 export const Line = styled.View`
@@ -112,4 +122,28 @@ height: 1px;
 width: 100%;
 background-color:${darkLight};
 margin-vertical: 10px;
+`;
+
+export const ExtraView = styled.View`
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+`;
+
+export const ExtraText = styled.Text`
+    justify-content: center;
+    align-content: center;
+    color: ${tertiary};
+    font-size: 15px;
+`;
+
+export const TextLink= styled.TouchableOpacity`
+    justify-content: center;
+    align-items: center;
+`;
+
+export const TextLinkContent= styled.Text`
+    color: ${brand};
+    font-size: 15px;
 `;
